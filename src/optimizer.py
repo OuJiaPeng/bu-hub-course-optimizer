@@ -21,10 +21,13 @@ def optimize_courses(vectorized_df, requirement_counts,
 
     # Apply filters
     vectorized_df = vectorized_df[
+        ~vectorized_df['Course Code'].str.extract(r'[A-Z]+\s+([A-Z]+)', expand=False).isin(excluded_depts_exact) &
         ~vectorized_df['Course Code'].str.extract(r'([A-Z]+)', expand=False).isin(excluded_departments) &
         ~vectorized_df['Course Code'].isin(excluded_course_codes) &
         ~vectorized_df['Course Title'].str.contains('|'.join(excluded_keywords), case=False, na=False)
     ].reset_index(drop=True)
+
+
 
     # Setup
     hub_columns = [col for col in vectorized_df.columns if col in requirement_counts]
@@ -104,7 +107,8 @@ if __name__ == "__main__":
     solutions = optimize_courses(
         vectorized_df=df,
         requirement_counts=requirement_counts,
-        excluded_departments=['CGS', 'SAR', 'QST'],
+        excluded_departments=['SAR', 'QST'],
+        excluded_depts_exact=['BI', 'PY'], 
         excluded_course_codes=['CAS WR 153E'],
         excluded_keywords=['Summer', 'Analysis'],
         max_solutions=5
