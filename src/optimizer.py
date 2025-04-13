@@ -107,6 +107,7 @@ if __name__ == "__main__":
     solutions = optimize_courses(
         vectorized_df=df,
         requirement_counts=requirement_counts,
+        # Example filters (edit this)
         excluded_departments=['SAR', 'QST'],
         excluded_depts_exact=['BI', 'PY'], 
         excluded_course_codes=['CAS WR 153E'],
