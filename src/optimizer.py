@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from pulp import *
 
@@ -77,7 +78,9 @@ def optimize_courses(vectorized_df, requirement_counts,
 
 if __name__ == "__main__":
     # Load course data
-    df = load_data("data/Vectorized_BU_Hub_Courses.csv")
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_path = os.path.join(root_dir, 'data', 'Vectorized_BU_Hub_Courses.csv')
+    df = load_data(data_path)
 
     # Example requirement (edit this)
     requirement_counts = {
