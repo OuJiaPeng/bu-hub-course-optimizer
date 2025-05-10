@@ -16,8 +16,8 @@ This tool uses integer linear programming (ILP) to find the minimum number of BU
 ## 🚀 How to use
 
 ```bash
-git clone https://github.com/OuJiaPeng/RL-Markowitz-portfolio-optimization.git  
-cd RL-Markowitz-portfolio-optimization
+git clone https://github.com/OuJiaPeng/bu-hub-course-optimizer.git
+cd bu-hub-course-optimizer
 
 # Install the required packages:
 
