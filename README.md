@@ -13,3 +13,19 @@ This tool uses integer linear programming (ILP) to find the minimum number of BU
 
 ---
 
+## 🚀 How to use
+
+```bash
+git clone https://github.com/OuJiaPeng/RL-Markowitz-portfolio-optimization.git  
+cd RL-Markowitz-portfolio-optimization
+
+# Install the required packages:
+
+pip install -r requirements.txt
+
+# Edit the ILP for HUB (Jupyter Notebook), change filters as you please
+# Run the ILP for HUB:
+
+jupyter notebook notebooks/ILP for HUB.ipynb
+```
+
