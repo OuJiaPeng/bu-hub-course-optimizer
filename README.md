@@ -26,6 +26,6 @@ pip install -r requirements.txt
 # Edit the ILP for HUB (Jupyter Notebook), change filters as you please
 # Run the ILP for HUB:
 
-jupyter notebook notebooks/ILP for HUB.ipynb
+jupyter notebook "notebooks/ILP for HUB.ipynb"
 ```
 
