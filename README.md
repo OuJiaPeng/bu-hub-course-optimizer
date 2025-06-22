@@ -1,10 +1,12 @@
-﻿# 💡 BU HUB Course Optimizer
+﻿# BU HUB Course Optimizer
+
+Give it a list of HUB requirements you need, gives you all the combination of classes that can satisfy it.
 
 This tool uses integer linear programming (ILP) to find the minimum number of BU courses that satisfy a student’s personalized Hub requirements.
 
 ---
 
-## ✨ Features
+## Features
 
 - Customizable HUB requirement input
 - Course filtering by department, title, or course code
@@ -13,7 +15,7 @@ This tool uses integer linear programming (ILP) to find the minimum number of BU
 
 ---
 
-## 🚀 How to use
+## How to use
 
 ```bash
 git clone https://github.com/OuJiaPeng/bu-hub-course-optimizer.git
